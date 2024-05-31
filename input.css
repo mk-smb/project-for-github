@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .title {
+        @apply text-5xl mb-14 relative;
+    }
+    .title::after, .title::before {
+        content: "";
+        @apply absolute block w-[200px] h-px bg-slate-300;
+        left: 50%;
+        top: 150%;
+        transform: translateX(-50%);
+    }
+    .title::before {
+        top: 170%;
+        @apply w-[100px];
+    }
+   .product-details-modal{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/product-detail-bg-img.jpg");
+    background-attachment: fixed;
+    filter: brightness(75%);
+   }
+   .modal{
+    @apply w-[80%] h-[75%];
+    background-color: #fff !important;
+   }
+}

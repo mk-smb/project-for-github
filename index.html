@@ -1,12 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
-    <h1 class="bg-red-500 text-white">Welcome to the page</h1>
+    <!-- topbar section -->
+    <section class="bg-gray-800 text-white p-3 text-sm">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-gap-5 ms-7">
+                <div class="phone-mail">
+                    <ul class="flex">
+                        <li>
+                            <a href="" class="me-5">
+                                <i class="fas fa-envelope"></i>
+                                companymail@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-phone"></i>
+                                (880) 172 380 1729
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-links text-center md:text-end">
+                    <ul class="flex justify-end space-x-10 me-16">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- navbar -->
+    <nav class="bg-neutral-50 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="brand">
+                <a href="">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <ul class="flex me-5 space-x-10">
+                    <li>
+                        <a href="">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Pages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Tour
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="bg-[#4BC700] text-white p-3 rounded-md">
+                            FREE CONSULTATION
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider-section -->
+    <section class="slider">
+        <div class="owl-carousel main-slider">
+            <div class="house w-[100%] h-[100%]">
+                <img src="images/slider1.jpg" alt="" class="w-[100%] h-[703px]">
+            </div>
+            <div class="house w-[100%] h-[100%]">
+                <img src="images/slider2.jpg" alt="" class="w-[100%] h-[100%]">
+            </div>
+            <!-- <div class="owl-nav">
+                <div class="owl-prev">prev</div>
+                <div class="owl-next">next</div>
+            </div>
+            <div class="owl-dots">
+                <div class="owl-dot bg-[#4BC700] h-[2px] w-[50px] active"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About property -->
+
+    <section>
+        <div class="container mx-auto">
+            <div class="about-heading text-center my-5">
+                <h2 class="title"><span class="font-bold">ABOUT</span> PROPERTY</h2>
+                <p class="text-[18px] mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores recusandae vitae voluptate facere
+                    animi ex neque placeat quo labore quidem, est praesentium temporibus minus natus ullam 
+                </p>
+            </div>
+
+            <div class="about-items">
+                <ul class="flex justify-around">
+                    <li class="text-center">
+                        <div class="icon">
+                            <i class="fa-solid text-[#4BC700] text-6xl fa-calendar"></i>
+                        </div>
+                        <div class="icon-text mt-6 text-2xl">
+                            <span class="font-bold">2008</span>
+                           <p class="mt-1">
+                            Year Of Build
+                           </p>
+                        </div>
+                    </li>
+                    <li class="text-center">
+                        <div class="icon">
+                            <i class="fa-solid text-[#4BC700] text-6xl fa-bed"></i>
+                        </div>
+                        <div class="icon-text mt-6 text-2xl">
+                            <span class="font-bold">3</span>
+                           <p class="mt-1">
+                                Bedrooms
+                           </p>
+                        </div>
+                    </li>
+                    <li class="text-center">
+                        <div class="icon">
+                            <i class="fa-solid text-[#4BC700] text-6xl fa-bath"></i>
+                        </div>
+                        <div class="icon-text mt-6 text-2xl">
+                            <span class="font-bold">2</span>
+                           <p class="mt-1">
+                            Bathrooms
+                           </p>
+                        </div>
+                    </li>
+                    <li class="text-center">
+                        <div class="icon">
+                            <i class="fa-solid text-[#4BC700] text-6xl fa-ruler"></i>
+                        </div>
+                        <div class="icon-text mt-6 text-2xl">
+                            <span class="font-bold">2,450</span>
+                           <p class="mt-1">
+                            Square Feet
+                           </p>
+                        </div>
+                    </li>
+                    <li class="text-center">
+                        <div class="icon">
+                            <i class="fa-solid text-[#4BC700] text-6xl fa-car"></i>
+                        </div>
+                        <div class="icon-text mt-6 text-2xl">
+                            <span class="font-bold">1</span>
+                           <p class="mt-1">
+                             Car Parking
+                           </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- Property-details-modal -->
+
+<section class="product-details-modal mt-16 flex justify-center items-center">
+    <div class="modal">
+
+    </div>
+</section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(".main-slider").owlCarousel({
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            slideBy: 2,
+            loop: true,
+            dots: true,
+            resonsive: true
+        })
+    </script>
 </body>
+
 </html>
+
+<!-- https://world5.commonsupport.com/html/home-zone/ 
+color #4BC700
+-->

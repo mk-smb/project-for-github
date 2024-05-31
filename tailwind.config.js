@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./project-for-github/*.html"],
+  content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "lato": [ "Lato", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
